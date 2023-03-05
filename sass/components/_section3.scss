@@ -107,7 +107,7 @@
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 30px;
-			padding-top: 45px;
+			padding: 45px 0 60px;
 		}
 
 		&-item {
@@ -160,11 +160,30 @@
 			}
 
 			ul {
-				padding-top: 68px;
+				padding: 68px 40px 40px;
 			}
 
 			li {
-				padding-top: 16px;
+				margin-top: 16px;
+			}
+
+			&:hover {
+				background: var(--color-title);
+				color: #fff;
+
+				&::before,
+				&::after {
+					border-bottom-color: #543605;
+				}
+
+				h3 {
+					background: linear-gradient(90deg, #A46E29 -27%, #AE7C30 -21.53%, #C49C47 -8.28%, #D7B85D 4.8%, #E7CF6F 17.48%, #F2DE7B 29.63%, #F7E47F 40.59%, #F2DF7A 55.02%, #E7CF6B 73.54%, #D6B752 94.19%, #C8A23E 110.08%, #BF8E2D 145.47%, #E3C762 202.7%, #F7E47F 226.11%, #F1DE79 234.44%, #E5CC6A 245.1%, #D2B251 257.06%, #BC9335 269.84%, #B2862D 275%);
+					color: var(--color-title);
+				}
+
+				li:after {
+					background: url('./images/cham2.svg') no-repeat center;
+				}
 			}
 		}
 

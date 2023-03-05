@@ -50,6 +50,15 @@
 		position: relative;
 		text-align: inherit;
 
+		&:hover {
+			background: var(--color-title);
+			color: #fff;
+
+			ul li::after {
+				background: url('./images/cham2.svg') no-repeat center;
+			}
+		}
+
 		&-image {
 			position: absolute;
 			top: -48px;
@@ -88,6 +97,10 @@
 			position: relative;
 			width: fit-content;
 			margin: auto;
+
+			&::after {
+				display: none;
+			}
 
 			&::before {
 				content: '*';

@@ -44,7 +44,21 @@
 	}
 }
 
-ul li {
-	position: relative;
+ul {
+	list-style: none;
 
+	li {
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			background: url('./images/cham.svg') no-repeat center;
+			top: 7px;
+			left: -15px;
+		}
+	}
 }
