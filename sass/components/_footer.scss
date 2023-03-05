@@ -1,0 +1,70 @@
+.footer {
+	background: linear-gradient(90deg, #2E477A -140.08%, #0F1E42 99.93%);
+
+	&__wrap {
+		padding: 40px 15px;
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 1;
+		text-transform: uppercase;
+		background: linear-gradient(90deg, #A46E29 -95.37%, #AE7C30 -88.47%, #C49C47 -71.71%, #D7B85D -55.19%, #E7CF6F -39.16%, #F2DE7B -23.82%, #F7E47F -9.97%, #F2DF7A 8.27%, #E7CF6B 31.66%, #D6B752 57.76%, #C8A23E 77.83%, #BF8E2D 122.56%, #E3C762 194.87%, #F7E47F 224.44%, #F1DE79 234.97%, #E5CC6A 248.44%, #D2B251 263.55%, #BC9335 279.7%, #B2862D 286.22%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+		margin: 0;
+		text-align: center;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		color: rgba(255, 255, 255, 0.87);
+		margin-top: 17px;
+
+		p {
+			margin: 0;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		img {
+			padding: 11px;
+			border-radius: 50%;
+			background: linear-gradient(90deg, #835A22 0%, #BEB363 100%);
+		}
+	}
+
+	&__info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 42px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	}
+
+	&__social {
+		padding: 20px 0 15px;
+		border-bottom: none;
+
+		img {
+			padding: 12px;
+			background: rgba(255, 255, 255, 0.09);
+			border-radius: 50%;
+
+		}
+	}
+
+	&__coppy {
+		font-size: 14px;
+		color: rgba(255, 255, 255, 0.87);
+		text-align: center;
+	}
+}

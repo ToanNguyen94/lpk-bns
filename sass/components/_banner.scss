@@ -1,0 +1,106 @@
+.banner {
+	&__wrap {
+		position: relative;
+	}
+
+	&__inner {
+		// padding: 120px 0 115px;
+		top: 120px;
+		position: absolute;
+	}
+
+	&__content {
+		color: #fff;
+		width: 60%;
+
+		h2 {
+			font-size: 40px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+
+	&__image {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background: linear-gradient(90deg, #835A22 0%, #BEB363 100%);
+		}
+
+		&::before {
+			bottom: 45px;
+			left: 5px;
+		}
+
+		&::after {
+			width: 56px;
+			height: 56px;
+			top: 80px;
+			right: 0;
+		}
+
+		img {
+			width: 400px;
+			height: 400px;
+			border-radius: 50%;
+			border: 5px solid #BEB363;
+			object-fit: cover;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+	}
+
+	.btn-see {
+		padding: 12px 40px;
+		margin-right: 40px;
+		display: inline-block;
+		background: linear-gradient(90deg, #A46E29 -95.37%, #AE7C30 -88.47%, #C49C47 -71.71%, #D7B85D -55.19%, #E7CF6F -39.16%, #F2DE7B -23.82%, #F7E47F -9.97%, #F2DF7A 8.27%, #E7CF6B 31.66%, #D6B752 57.76%, #C8A23E 77.83%, #BF8E2D 122.56%, #E3C762 194.87%, #F7E47F 224.44%, #F1DE79 234.97%, #E5CC6A 248.44%, #D2B251 263.55%, #BC9335 279.7%, #B2862D 286.22%);
+		border-radius: 12px;
+		color: var(--color-title);
+		font-weight: 700;
+		transition: .3s linear;
+
+		&:hover {
+			background: linear-gradient(270.12deg, #A46E29 -140.21%, #AE7C30 -132.42%, #C49C47 -113.53%, #D7B85D -94.9%, #E7CF6F -76.82%, #F2DE7B -59.52%, #F7E47F -43.9%, #F2DF7A -23.33%, #E7CF6B 3.05%, #D6B752 32.48%, #C8A23E 55.12%, #BF8E2D 105.55%, #E3C762 187.1%, #F7E47F 220.45%, #F1DE79 232.33%, #E5CC6A 247.52%, #D2B251 264.56%, #BC9335 282.77%, #B2862D 290.13%);
+		}
+	}
+
+	.btn-video {
+		display: flex;
+		align-items: center;
+		color: #fff;
+		font-weight: 600;
+		margin-top: 5px;
+
+		span {
+			margin-right: 16px;
+		}
+
+		&:hover {
+			background: linear-gradient(90deg, #835A22 0%, #BEB363 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+
+			svg path {
+				fill: #a89b39;
+			}
+
+			svg circle {
+				stroke: #a89b39;
+
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"scripts": {
+		"css": "sass sass:css  sass/style.scss:style.css",
+		"watch": "sass sass:css  sass/style.scss:style.css --style=compressed --watch",
+		"sync": "browser-sync start --proxy \"localhost/lpk\" --files \"style.css\" --files \"css/*.css\"",
+		"start": "npm run watch & npm run watch:home",
+		"replace": "npm i & node replace.js"
+	},
+	"devDependencies": {
+		"dart-sass": "^1.25.0"
+	},
+	"dependencies": {
+		"replace-in-file": "^6.3.5",
+		"sass": "^1.49.10"
+	}
+}
