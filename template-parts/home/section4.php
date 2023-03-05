@@ -8,7 +8,7 @@ $images = rwmb_meta('section4-image');
 
 <section class="section4">
 	<div class="container section4__wrap">
-		<div class="section4__test">
+		<div class="section4__test" id="section4">
 			<h2 class="title"><?= $title1 ?></h2>
 			<div class="section3__tab3-gallery">
 				<?php
@@ -25,7 +25,7 @@ $images = rwmb_meta('section4-image');
 				?>
 			</div>
 		</div>
-		<div class="section4__content">
+		<div class="section4__content" id="section5">
 			<h2 class="title"><?= $title2 ?></h2>
 			<div class="section4__content-inner">
 				<?php

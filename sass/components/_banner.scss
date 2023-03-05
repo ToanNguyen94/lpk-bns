@@ -1,12 +1,22 @@
 .banner {
+	margin-top: 80px;
+
 	&__wrap {
 		position: relative;
+		overflow: hidden;
+	}
+
+	&__wrap>img {
+		height: 640px;
+		width: 100%;
+		object-fit: cover;
 	}
 
 	&__inner {
-		// padding: 120px 0 115px;
 		top: 120px;
 		position: absolute;
+		right: 0;
+		left: 0;
 	}
 
 	&__content {

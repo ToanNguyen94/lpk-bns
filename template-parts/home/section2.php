@@ -3,7 +3,7 @@ $title = rwmb_meta('section2-title');
 $content = rwmb_meta('section2-content');
 $groups = rwmb_meta('section2-group');
 ?>
-<section class="section2" id="#section2">
+<section class="section2" id="section2">
 	<div class="container section2__wrap">
 		<h2 class="title"><?= $title ?></h2>
 		<div class="section2__inner d-flex">

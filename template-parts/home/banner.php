@@ -6,7 +6,7 @@ $banner_groups = rwmb_meta('banner-group');
 $link_see = rwmb_meta('banner-see');
 $link_video = rwmb_meta('banner-video');
 ?>
-<section class="banner">
+<section class="banner" id="banner">
 	<?php
 	foreach ($banner_groups as $banner_group) :
 		$image_bg = isset($banner_group['banner-background']) ? wp_get_attachment_image_url($banner_group['banner-background'], 'full') : '';

@@ -45,9 +45,28 @@ jQuery( function ( $ ) {
 			$( '#' + tab_id ).addClass( 'active' );
 		} );
 	}
+	function goToTop() {
+		const button = document.querySelector( '.cta__btn' );
+		if ( !button ) {
+			return;
+		}
+
+		// window.addEventListener( 'scroll', () => {
+		// 	if ( window.scrollY > 100 ) {
+		// 		button.classList.add( 'is-visible' );
+		// 	} else {
+		// 		button.classList.remove( 'is-visible' );
+		// 	}
+		// } );
+
+		button.addEventListener( 'click', e => {
+			e.preventDefault();
+			window.scrollTo( { top: 0, left: 0, behavior: 'smooth' } );
+		} );
+	}
 
 	slickSlide();
-	// popupForm();
 	// toggleMenu();
 	tabTransfer();
+	goToTop();
 } );

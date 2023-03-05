@@ -8,7 +8,7 @@ $tab4_image = rwmb_meta('tab4-image');
 
 
 ?>
-<section class="section3">
+<section class="section3" id="section3">
 	<div class="container section3__wrap">
 		<div class="section3__tabs d-flex">
 			<?php
