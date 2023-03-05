@@ -13,7 +13,7 @@
 	get_template_part('template-parts/home/section2');
 	get_template_part('template-parts/home/section3');
 	get_template_part('template-parts/home/section4');
-
+	get_template_part('template-parts/home/contact');
 
 	?>
 </main>

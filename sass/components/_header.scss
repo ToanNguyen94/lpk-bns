@@ -11,6 +11,10 @@
 		padding: 8px 15px 2px;
 	}
 
+	&__menu {
+		transition: all 0.2s ease-in-out;
+	}
+
 	.menu {
 		list-style: none;
 		margin: 0;
@@ -24,11 +28,33 @@
 		text-transform: uppercase;
 	}
 
+	.menu-item:hover a {
+		background: linear-gradient(90deg, #A46E29 -95.37%, #AE7C30 -88.47%, #C49C47 -71.71%, #D7B85D -55.19%, #E7CF6F -39.16%, #F2DE7B -23.82%, #F7E47F -9.97%, #F2DF7A 8.27%, #E7CF6B 31.66%, #D6B752 57.76%, #C8A23E 77.83%, #BF8E2D 122.56%, #E3C762 194.87%, #F7E47F 224.44%, #F1DE79 234.97%, #E5CC6A 248.44%, #D2B251 263.55%, #BC9335 279.7%, #B2862D 286.22%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+	}
+
 	.menu li {
 		padding: 0 24px;
 
 		&::after {
 			display: none;
+		}
+	}
+
+	.menu-toggle {
+		background: transparent;
+		display: none;
+
+		&:focus {
+			outline: 0;
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
 		}
 	}
 }
@@ -69,6 +95,43 @@
 			svg path:last-child {
 				fill: #BEB363;
 			}
+		}
+	}
+}
+
+@media(max-width:1024px) {
+	.header {
+		.menu-toggle {
+			display: block;
+		}
+
+		&__menu {
+			//display: none;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-100%);
+
+			&.is-open {
+				//display: block;
+				opacity: 1;
+				visibility: visible;
+				position: absolute;
+				width: 50%;
+				background: #fff;
+				top: 100%;
+				right: 0;
+				padding: 0 15px 15px;
+				text-align: right;
+				transform: translateY(0);
+
+				ul {
+					display: block;
+				}
+			}
+		}
+
+		.menu li {
+			padding: 7px;
 		}
 	}
 }

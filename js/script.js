@@ -16,19 +16,14 @@ jQuery( function ( $ ) {
 	};
 
 	function toggleMenu() {
-		const nav = document.querySelector( '.header__inner' );
+		const nav = document.querySelector( '.header__menu' );
 		if ( !nav ) {
 			return;
 		}
-		const $menu = $( '.header__inner' );
-		const button = document.querySelector( '.menu-toggle' );
+		const menu = nav.querySelector( 'ul' ),
+			button = document.querySelector( '.menu-toggle' );
 
-		$( document ).mouseup( e => {
-			if ( !$menu.is( e.target ) && $menu.has( e.target ).length === 0 ) // ... nor a descendant of the container
-			{
-				$menu.removeClass( 'is-open' );
-			}
-		} );
+		menu.setAttribute( 'aria-expanded', 'false' );
 		button.addEventListener( 'click', () => {
 			nav.classList.toggle( 'is-open' );
 		} );
@@ -50,15 +45,6 @@ jQuery( function ( $ ) {
 		if ( !button ) {
 			return;
 		}
-
-		// window.addEventListener( 'scroll', () => {
-		// 	if ( window.scrollY > 100 ) {
-		// 		button.classList.add( 'is-visible' );
-		// 	} else {
-		// 		button.classList.remove( 'is-visible' );
-		// 	}
-		// } );
-
 		button.addEventListener( 'click', e => {
 			e.preventDefault();
 			window.scrollTo( { top: 0, left: 0, behavior: 'smooth' } );
@@ -66,7 +52,7 @@ jQuery( function ( $ ) {
 	}
 
 	slickSlide();
-	// toggleMenu();
+	toggleMenu();
 	tabTransfer();
 	goToTop();
 } );

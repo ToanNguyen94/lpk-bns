@@ -1,0 +1,57 @@
+.contact {
+	&__inner {
+		padding: 48px 53px 0;
+		position: relative;
+	}
+
+	.frm-fluent-form .ff-t-container {
+		gap: 80px;
+	}
+
+	.title h2 {
+		margin: 0;
+		font-size: 42px;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	.title::before {
+		display: none !important;
+	}
+
+	.fluentform_1 {
+		position: relative;
+	}
+
+	.fluentform .ff_btn_style {
+		background: linear-gradient(90deg, #A46E29 -95.37%, #AE7C30 -88.47%, #C49C47 -71.71%, #D7B85D -55.19%, #E7CF6F -39.16%, #F2DE7B -23.82%, #F7E47F -9.97%, #F2DF7A 8.27%, #E7CF6B 31.66%, #D6B752 57.76%, #C8A23E 77.83%, #BF8E2D 122.56%, #E3C762 194.87%, #F7E47F 224.44%, #F1DE79 234.97%, #E5CC6A 248.44%, #D2B251 263.55%, #BC9335 279.7%, #B2862D 286.22%);
+		border-radius: 12px;
+		text-transform: uppercase;
+		line-height: 1;
+		font-weight: 700;
+		padding: 16px 205px;
+	}
+
+	.fluentform .ff_submit_btn_wrapper {
+		position: absolute;
+		top: 67%;
+	}
+
+	.fluentform .ff-el-group {
+		margin-bottom: 12px;
+	}
+
+	.ff-t-column-1 {
+		background: url('./images/contact-bg.png') no-repeat bottom left;
+		background-size: contain;
+	}
+
+	&__image {
+		width: 385px;
+		margin: 0 !important;
+
+		p {
+			margin: 0;
+		}
+	}
+}

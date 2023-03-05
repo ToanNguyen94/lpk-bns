@@ -29,6 +29,9 @@
             <div class="header__language">
 
             </div>
+            <button class="menu-toggle header-icon" aria-controls="primary-menu" aria-expanded="false">
+                <?php TemplateFunction::get_icon('bars') ?>
+            </button>
         </div>
     </header>
     <a href="tel: ＋623187885459" class="cta__call">
