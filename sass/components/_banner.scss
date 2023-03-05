@@ -32,7 +32,6 @@
 
 	&__image {
 		position: relative;
-		flex: 1;
 
 		&::before,
 		&::after {
@@ -111,6 +110,76 @@
 			svg circle {
 				stroke: #a89b39;
 
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.banner {
+		&__wrap>img {
+			height: 500px;
+		}
+
+		&__inner {
+			top: 100px;
+		}
+
+		&__content {
+			h2 {
+				font-size: 26px;
+			}
+		}
+
+		&__image {
+
+			&::before {
+				bottom: 15px;
+				left: 17px;
+				width: 60px;
+				height: 60px;
+			}
+
+			&::after {
+				width: 40px;
+				height: 40px;
+				top: 58px;
+			}
+
+			img {
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+}
+
+@media(max-width:767px) {
+	.banner {
+		&__inner {
+			top: 20px;
+		}
+
+		&__content {
+			width: 100%;
+			font-size: 14px;
+
+			h2 {
+				font-size: 20px;
+			}
+		}
+
+		&__image {
+
+			&::before,
+			&::after {
+				display: none;
+			}
+
+			img {
+				width: 200px;
+				height: 200px;
+				margin: auto;
 			}
 		}
 	}

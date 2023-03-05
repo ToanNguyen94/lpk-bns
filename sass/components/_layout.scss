@@ -66,3 +66,18 @@ ul {
 		}
 	}
 }
+
+@media(max-width:767px) {
+	.d-flex {
+		display: block
+	}
+
+	.title {
+		font-size: 30px;
+
+		&::before,
+		&::after {
+			display: none !important;
+		}
+	}
+}

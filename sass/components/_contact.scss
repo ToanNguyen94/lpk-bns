@@ -55,3 +55,40 @@
 		}
 	}
 }
+
+@media (max-width:1024px) {
+	.contact {
+		.frm-fluent-form .ff-t-container {
+			display: block;
+		}
+
+		&__image {
+			width: auto;
+			text-align: center;
+
+			img {
+				width: 50%;
+			}
+		}
+
+		.fluentform .ff_submit_btn_wrapper {
+			position: relative;
+		}
+	}
+}
+
+@media(max-width:767px) {
+	.contact {
+		&__inner {
+			padding: 40px 0;
+		}
+
+		.fluentform .ff_btn_style {
+			padding: 8px 12px;
+		}
+
+		.title h2 {
+			font-size: 30px;
+		}
+	}
+}

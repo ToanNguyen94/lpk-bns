@@ -23,17 +23,6 @@
 
 	.title {
 		margin: auto;
-
-		&::before {
-			content: '';
-			display: block;
-			position: absolute;
-			width: 40px;
-			height: 42px;
-			left: -60px;
-			bottom: 0;
-			background: url('./images/title-bg2.png') no-repeat center;
-		}
 	}
 
 	&__inner {
@@ -107,6 +96,36 @@
 				display: block;
 				position: absolute;
 				left: -12px;
+			}
+		}
+	}
+}
+
+@media(max-width:1024px) {
+	.section2 {
+		&__wrap {
+			padding: 50px 15px;
+		}
+
+		&__item-desc {
+			padding: 60px 20px 40px;
+		}
+	}
+}
+
+@media(max-width:767px) {
+	.section2 {
+		font-size: 14px;
+
+		&__inner {
+			padding-bottom: 0;
+		}
+
+		&__item {
+			margin-bottom: 60px;
+
+			&-desc h3 {
+				font-size: 20px;
 			}
 		}
 	}
